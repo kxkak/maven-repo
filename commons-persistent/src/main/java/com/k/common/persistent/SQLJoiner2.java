@@ -103,7 +103,7 @@ public class SQLJoiner2 {
 
         LinkedCaseInsensitiveMap<Operator> operatorTypeMap = null;
         if (!CollectionUtils.isEmpty(option.getOperatorTypeMap())) {
-            operatorTypeMap = new LinkedCaseInsensitiveMap();
+            operatorTypeMap = new LinkedCaseInsensitiveMap<>();
             operatorTypeMap.putAll(option.getOperatorTypeMap());
             filterByOperator(fieldMap, operatorTypeMap);
         }

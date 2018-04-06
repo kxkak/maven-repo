@@ -15,25 +15,25 @@
         <module>commons-persistent</module>
     </modules>
 
-    <distributionManagement>
-        <repository>
-            <id>file-repository</id>
-            <url>file:/Users/kongxiangke/Documents/baturu/mypro/maven-repo/repo</url>
-        </repository>
-    </distributionManagement>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.version>3.3.9</maven.version>
-        <!--<github.global.server>github</github.global.server>-->
-        <commons.dto.version>1.0.0_SNAPSHOT</commons.dto.version>
-        <commons.persistent.version>1.0.0_SNAPSHOT</commons.persistent.version>
+        <commons.dto.version>1.0.0-SNAPSHOT</commons.dto.version>
+        <commons.persistent.version>1.0.0-SNAPSHOT</commons.persistent.version>
         <spring.version>4.3.13.RELEASE</spring.version>
         <mybatis.version>3.4.5</mybatis.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
+
+            <dependency>
+                <groupId>javax</groupId>
+                <artifactId>javaee-api</artifactId>
+                <version>7.0</version>
+                <scope>provided</scope>
+            </dependency>
+
             <dependency>
                 <groupId>com.github.k.utils</groupId>
                 <artifactId>commons-dto</artifactId>

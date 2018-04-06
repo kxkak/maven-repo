@@ -1,6 +1,6 @@
-package com.eco.erp.support.persistent.handler;
+package com.k.common.persistent.handler;
 
-import com.eco.erp.support.persistent.constants.MyBatisEnum;
+import com.k.common.persistent.constants.MyBatisEnum;
 import org.apache.ibatis.type.BaseTypeHandler;
 import org.apache.ibatis.type.JdbcType;
 
